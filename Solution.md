@@ -49,10 +49,12 @@
 
 ### React JS:
  - Install React.js.
+    ```console
     npm install create-react-app -g
 
     # Again, it needs to be added to a global bin directory
     sudo ln -s `pwd`/create-react-app /usr/bin
+    ```
 
  - Creating a React Application and print message "Hello React.js"
 
@@ -60,12 +62,14 @@
 
  - Change the default port 3000 to 3001
 
-    # Edit `package.json` and prepend `PORT=3001` to `scripts -> start` 
+    Edit `package.json` and prepend `PORT=3001` to `scripts -> start` 
     
     ##### Insert screenshot here
 
+    ```console
     # Instead of opening a port, we can also use SSH forwarding to access the web application
     ssh tom@kb1 -p 8080 -L 3001:localhost:3001
+    ```
 
     ##### Insert screenshot here
 
