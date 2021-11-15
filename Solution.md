@@ -21,7 +21,8 @@
 
  - Create 2 API's running on ports 6080 and 7080 with mesaages "Hello Node JS" and "Node JS installed successfully" respectively.
 
-    ##### Insert screenshot here
+    ![Running 2 projects](https://user-images.githubusercontent.com/23631617/141808643-e7e6313b-0f93-44b8-b8a7-88108ce25391.png)
+
 
  - Install pm2 tool and create 4 clusters of bothe Node's.
 
@@ -39,13 +40,18 @@
     pm2 start assignment_node_1/index.js --name api1 -i 4
     ```
 
-    ##### Insert screenshot here
+   ![4+4 instances](https://user-images.githubusercontent.com/23631617/141808806-adf6759b-1d1b-47b0-b99b-dbf1c10b1311.png)
+
 
  - Delete all 4 clusters one-by-one
 
     ```console
-    pm2 delete {0,1,2,3,4,5,6,7}
+    pm2 delete {0..7}
     ```
+    
+    ![Deleting all clusters one-by-one](https://user-images.githubusercontent.com/23631617/141809277-9c1083aa-b80a-4cda-9fd8-602f49c46685.png)
+
+---
 
 ### React JS:
  - Install React.js.
@@ -58,19 +64,17 @@
 
  - Creating a React Application and print message "Hello React.js"
 
-    ##### Insert screenshot here
+    ![React app on port 3001](https://user-images.githubusercontent.com/23631617/141809553-56d6114b-86cd-4b3b-9e63-795647a5611c.png)
+
 
  - Change the default port 3000 to 3001
 
     Edit `package.json` and prepend `PORT=3001` to `scripts -> start` 
     
-    ##### Insert screenshot here
+    ![Change port to 3001](https://user-images.githubusercontent.com/23631617/141809739-24fcc6ab-4dfb-460e-b11c-255554101336.png)
+
 
     ```console
     # Instead of opening a port, we can also use SSH forwarding to access the web application
     ssh tom@kb1 -p 8080 -L 3001:localhost:3001
     ```
-
-    ##### Insert screenshot here
-
-
