@@ -21,10 +21,11 @@
 
  - Create 2 API's running on ports 6080 and 7080 with mesaages "Hello Node JS" and "Node JS installed successfully" respectively.
 
-    # Insert screenshot here
+    ##### Insert screenshot here
 
  - Install pm2 tool and create 4 clusters of bothe Node's.
 
+    ```console
     # Install pm2 globally
     npm install pm2 -g
 
@@ -36,12 +37,15 @@
     # Create 4 clusters
     pm2 start assignment_node_0/index.js --name api0 -i 4
     pm2 start assignment_node_1/index.js --name api1 -i 4
+    ```
 
-    # Insert screenshot here
+    ##### Insert screenshot here
 
  - Delete all 4 clusters one-by-one
 
+    ```console
     pm2 delete {0,1,2,3,4,5,6,7}
+    ```
 
 ### React JS:
  - Install React.js.
